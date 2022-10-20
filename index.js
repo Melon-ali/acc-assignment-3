@@ -3,6 +3,7 @@ const dotenv = require("dotenv").config();
 const colors = require("colors");
 const app = require("./app");
 
+
 mongoose.connect(process.env.DATABASE_URL).then(() => {
     console.log(`Database Connected...`.red.bold);
 });

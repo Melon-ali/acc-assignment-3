@@ -11,7 +11,7 @@ const {
   
       if (!candidates) {
         return res.status(500).json({
-          status: "fail",
+          status: "Fail",
           message: "Couldn't get All Candidates",
         });
       }

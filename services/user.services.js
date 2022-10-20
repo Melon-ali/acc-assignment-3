@@ -2,12 +2,6 @@ const User = require("../models/User");
 const bcrypt = require("bcryptjs");
 
 const signUpServices = async (data) => {
-  //   const password = this.password;
-
-  //   const hashedPassword = bcrypt.hashSync(password);
-
-  //   this.password = hashedPassword;
-  //   this.confirmPassword = undefined;
   if (data.password !== data.confirmPassword) {
     return "confirmPassword Passwords don't match!";
   }
